@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Currency Converter</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <!-- <img src="./currency.jpg" alt="currency"> -->
+    <img id="leftcorner" src="./currency1.png" alt="">
+    <!-- <br> -->
+    <img id="rbi" src="./RBI.png" alt="">
+    <div class="converter">
+      <input type="number" id="amount" placeholder="Enter amount" />
+      <select id="fromCurrency">
+        <option value="INR">INR</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+      </select>
+      <select id="toCurrency">
+        <option value="USD">USD</option>
+        <option value="INR">INR</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+      </select>
+      <button onclick="convertCurrency()">Convert</button>
+      <div id="result"></div>
+    </div>
+    <footer>© Krish Agrawal. All rights reserved.</footer>
+    <script src="script.js"></script>
+</body>
+</html>
